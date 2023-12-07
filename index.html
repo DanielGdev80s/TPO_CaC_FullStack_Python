@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo-coffee-vaso.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="header" id="headerP">
+        <div class="menu container">
+            <img src="images/cabrales.png" class="logo">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="icono menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li> <a href="carta01.html">Carta</a></li>
+                    <li> <a href="productos.html">Preparaciones</a></li>
+                    <li> <a href="index.html#Horarios">Horarios</a></li>
+                    <li> <a href="index.html#Contacto">Contacto</a></li>
+                    <li> <a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <img src="images/logo blanco(1).png" class="logocoffee">
+            <h2>Haciendo cosas deliciosas desde el año 2009</h2>
+            <p>Somos una cafetería de la Ciudad de Salta dedicados exclusivamente al servicio de delivery para oficinas
+                y comercios. Nuestros clientes son personas que confían en nosotros todos los días para que les
+                brindemos la comida
+                mas importante del día, el desayuno.</p>
+
+        </div>
+
+    </header>
+
+ <!-- Sección Carta -->   
+
+    <section class="carta" id="carta">
+        <img class="carta-img" src="images/bg2.png" alt="">
+        <div class="carta-content container">
+            <h2>Nuestra carta</h2>
+            <p class="txt-p">
+                El desayuno es una de las comidas más importantes del día, y su importancia radica en varios aspectos
+                que afectan la salud y el bienestar de una persona. Con esa premisa armamos nuestra carta con opciones
+                para todos los gustos.
+            </p>
+            <div class="carta-group">
+                <div class="carta-1">
+                    <img src="images/c1.png" alt="">
+                    <h3> Desayunos Clásicos</h3>
+                    <a href="carta01.html#carta001" class="btn-1">Conocenos</a>
+                    <p>
+                        Aquí encontrarás opciones típicas del paladar argentino.
+                    </p>
+                </div>
+                <div class="carta-1">
+                    <img src="images/c2.png" alt="">
+                    <h3> Desayunos Especiales</h3>
+                    <a href="carta01.html#carta002" class="btn-1">Conocenos</a>
+                    <p>
+                        Estás son las opciones un poco más balanceadas y nutritivas.
+                    </p>
+                </div>
+                <div class="carta-1">
+                    <img src="images/c3.png" alt="">
+                    <h3> Jugos y Tentempies</h3>
+                    <a href="carta01.html#carta003" class="btn-1">Conocenos</a>
+                    <p>
+                        Para cuando quieras darte un gustito o algo fresco.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+
+    <main class="services" id="services">
+        <div class="services-content container">
+            <h2>Nuestros productos</h2>
+            <div class="services-group">
+                <div class="services-1">
+                    <img src="images/i1.svg" alt="">
+                    <h3>Nuestro Café</h3>
+                </div>
+                <div class="services-1">
+                    <img src="images/i2.svg" alt="">
+                    <h3>Nuestro Pan</h3>
+                </div>
+                <div class="services-1">
+                    <img src="images/i3.svg" alt="">
+                    <h3>Nuestros Frescos</h3>
+                </div>
+            </div>
+            <p>
+                La calidad de los productos para el desayuno es fundamental para garantizar una experiencia
+                satisfactoria y nutritiva. Aquí encontrarás información sobre las cosas deliciosas que preparamos.
+            </p>
+            <a href="productos.html" class="btn-1">Informacion</a>
+        </div>
+    </main>
+
+ <!-- Sección Horarios -->   
+
+    <section class="general">
+        <div class="general-1" id="Horarios">
+            <h2>Horarios</h2>
+            <p>
+                Atendemos en días hábiles de Lunes a Viernes, desde las 7:00 de la mañana
+                a las 14:00 hs. <br>
+                Los envíos se hacen únicamente en las inmediaciones
+                de nuestro local.
+            </p>
+        </div>
+        <div class="general-2"></div>
+    </section>
+
+<!-- Sección Formulario Contacto -->    
+
+    <section class="general" id="Contacto">
+        <div class="general-3"></div>
+        <div class="general-1">
+            <h2>Contacto</h2>
+            <p>
+                Escribínos si querés hacernos alguna consulta, o si te interesa podés pasarnos tu número para que te
+                sumemos a nuestra comunidad de clientes frecuentes.
+            </p>
+            <form action="https://formsubmit.co/coffeehousedf45@gmail.com" class="contact" method="POST" id="formulario">
+                <label for="nombres">Nombres</label>
+                <input required type="text" name="nombres" id="nombres">
+
+                <label for="correo">Correo</label>
+                <input required type="email" name="correo" id="correo">
+
+                <label for="nombres">Celular</label>
+                <input required type="text" name="celular" id="celular">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+                <input type="submit" onclick="return enviarFormulario();" value="Enviar">
+
+
+            </form>
+            <div id="error"></div>
+            <script src="js/app.js"></script>
+        </div>
+    </section>
+
+    <!-- Sección Blog-->
+
+    <section class="blog container" id="Blog">
+        <h2>Blog</h2>
+        <p>El café es rico en sabor y rico en cultura. Aquí compartimos un poco.</p>
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="images/blog1.jpg" alt="">
+                <h3>Historias</h3>
+                <p>
+                    El café acompaña a la humanidad desde el siglo IX. En ese largo recorrido se han tejido infinidad de
+                    historias que han ido moldeando la sociedad como la conocemos. Es un compañero infaltable para
+                    nuestro dia a dia.
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="images/blog2.jpg" alt="">
+                <h3>Curiosidades</h3>
+                <p>
+                    El café es una de las bebidas más populares alrededor del mundo, está tan arraigado a nuestra
+                    cultura que puedes pedirlo fácilmente en cualquier parte y disfrutarlo en cualquier momento.
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="images/blog3.jpg" alt="">
+                <h3>Nutrición</h3>
+                <p>
+                    Cuando la gente piensa en el café, suele pensar en su capacidad para proporcionar un impulso de
+                    energía. Sin embargo, según algunas investigaciones, también puede ofrecer otros beneficios
+                    importantes para la salud.
+                </p>
+            </div>
+        </div>
+        <a href="blog.html" class="btn-1">Informacion</a>
+
+    </section>
+
+    <!-- Menú flotante -->
+
+    <div class="floating-container">
+        
+        <div class="floating-button" id="floatingButton">
+            <img src="images/bean-menu.png" alt="Grano de Café">
+        </div>
+        <!-- Enlaces ocultos -->
+        <div class="links" id="links">
+            <a href="index.html">Inicio</a>
+            <a href="carta01.html">Carta</a>
+            <a href="productos.html">Preparaciones</a>
+            <a href="index.html#Horarios">Horarios</a>
+            <a href="index.html#Contacto">Contacto</a>
+            <a href="blog.html">Blog</a>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+<!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Dirección</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/@-24.7887902,-65.40824,21z?entry=ttu" target="_blank">Deán
+                            Funes 45 - Salta</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Teléfono</h3>
+                <ul>
+                    <li><a href="#">54 387 4500736</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Correo</h3>
+                <ul>
+                    <li><a href="#">coffeehouse@hotmail.es</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3><a href="https://www.instagram.com/coffeehousesalta/" target="_blank"><img src="images/logo_insta.png" alt="Instagram">
+                    </a>
+                </h3>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
